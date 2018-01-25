@@ -26,7 +26,7 @@ Install the package itself:
 
 Sample module definition:
 
-    import { DraftRichModue } from 'angular-draft-js/editors/rich.module';
+    import { DraftRichModue } from 'ngx-draft-js';
     import { SomeComponentWithEditor } from './some.component';
 
     @NgModule({
@@ -50,7 +50,7 @@ Basic usage in a component:
             </draft-rich-html>
         `,
     })
-    export class SomeComponent {
+    export class SomeComponentWithEditor {
         onHtmlChange($event: string) {
             console.debug('Got new HTML from the Draft.js editor', $event);
         }
