@@ -10,6 +10,10 @@
   "module": "./esm5/angular-draft.js",
   "es2015": "./esm2015/angular-raft.js",
   "typings": "./angular-draft.d.ts",
+  "scripts": {
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
   "keywords": [
     "angular",
     "rich-text-editor",
@@ -22,5 +26,9 @@
   },
   "dependencies": {
     "draft-js-export-html": "^1.2.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^12.2.4",
+    "travis-deploy-once": "^4.3.3"
   }
 }
