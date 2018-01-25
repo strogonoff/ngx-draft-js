@@ -1,5 +1,7 @@
 # Angular bindings for Draft.js editor
 
+[![Travis CI Build Status](https://travis-ci.org/strogonoff/ngx-draft-js.svg?branch=master)](https://travis-ci.org/strogonoff/ngx-draft-js)
+
 **[Draft.js](http://draftjs.org)** is a React-based framework
 for building rich text editors
 developed at Facebook.
