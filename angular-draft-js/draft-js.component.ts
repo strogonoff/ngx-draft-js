@@ -59,6 +59,6 @@ export class DraftHtmlBase extends DraftBase {
       [reactProps]="editorProps">
     </react-component>
   `,
-  styleUrls: ['./draft-js.component.scss'],
+  styleUrls: ['./draft-js.component.css'],
 })
 export class Draft extends DraftBase {}

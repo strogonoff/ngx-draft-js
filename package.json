@@ -57,6 +57,7 @@
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
     "gulp": "^3.9.1",
+    "gulp-append-prepend": "^1.0.4",
     "gulp-inline-ng2-template": "^4.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",

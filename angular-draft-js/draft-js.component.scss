@@ -1,8 +1,0 @@
-::ng-deep {
-
-  // The file imported here is Draft.css from Draft.js bundle, copied over
-  // at build time. Draft.css contains base styles, such as for placeholder,
-  // and its contents are not intended to be modified.
-  @import "draft-js";
-
-}

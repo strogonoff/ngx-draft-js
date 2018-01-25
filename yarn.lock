@@ -3972,6 +3972,14 @@ graceful-fs@~1.2.0:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-1.2.3.tgz#15a4806a57547cb2d2dbf27f42e89a8c3451b364"
 
+gulp-append-prepend@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/gulp-append-prepend/-/gulp-append-prepend-1.0.4.tgz#19e1bea2b633c72fd42e84cad0a02c5c120136be"
+  dependencies:
+    gulp-util "^3.0.7"
+    read-file "^0.2.0"
+    through2 "^2.0.1"
+
 gulp-inline-ng2-template@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/gulp-inline-ng2-template/-/gulp-inline-ng2-template-4.1.0.tgz#61fab59a66945c37a0c4838b5e793d6708e91dfd"
@@ -3998,7 +4006,7 @@ gulp-sass@^3.1.0:
     through2 "^2.0.0"
     vinyl-sourcemaps-apply "^0.2.0"
 
-gulp-util@^3.0, gulp-util@^3.0.0, gulp-util@~3.0.6:
+gulp-util@^3.0, gulp-util@^3.0.0, gulp-util@^3.0.7, gulp-util@~3.0.6:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/gulp-util/-/gulp-util-3.0.8.tgz#0054e1e744502e27c04c187c3ecc505dd54bbb4f"
   dependencies:
@@ -7392,6 +7400,10 @@ read-cache@^1.0.0:
   resolved "https://registry.yarnpkg.com/read-cache/-/read-cache-1.0.0.tgz#e664ef31161166c9751cdbe8dbcf86b5fb58f774"
   dependencies:
     pify "^2.3.0"
+
+read-file@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/read-file/-/read-file-0.2.0.tgz#70c6baf8842ec7d1540f981fd0e6aed4c81bd545"
 
 read-only-stream@^2.0.0:
   version "2.0.0"

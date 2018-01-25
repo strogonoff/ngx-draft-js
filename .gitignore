@@ -1,7 +1,7 @@
 demo-app/src/environments/environment.prod.ts
 
 # derived during build
-angular-draft-js/_draft-js.scss
+angular-draft-js/draft-js.component.css
 
 # compiled output
 /dist
