@@ -34,7 +34,6 @@ export class ReactComponentWrapper implements AfterContentInit {
   constructor(private ref: ElementRef) {}
 
   renderReact() {
-    console.debug("rendering react", this._props);
     ReactDOM.render(
       React.createElement(this.reactClass, this._props),
       this.ref.nativeElement);
