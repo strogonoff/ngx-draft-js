@@ -1,5 +1,3 @@
-demo-app/src/environments/environment.prod.ts
-
 # derived during build
 angular-draft-js/draft-js.component.css
 
