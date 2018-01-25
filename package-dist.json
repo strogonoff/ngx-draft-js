@@ -1,6 +1,6 @@
 {
   "//": "Paths here are relative to dist directory",
-  "name": "angular-draft-js",
+  "name": "ngx-draft-js",
   "version": "0.1.0-pre",
   "description": "Angular bindings for Draft.js",
   "author": "Anton Strogonoff",
