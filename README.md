@@ -23,11 +23,15 @@ Install the package itself:
 
 ## Using bundled rich text editor
 
-Import Angular module:
+Module import:
 
     import { DraftRichModue } from 'angular-draft-js/editors/rich.module';
+    import { SomeComponentWithEditor } from './some.component';
 
     @NgModule({
+        declarations: [
+            SomeComponentWithEditor,
+        ],
         imports: [
             DraftRichModule,
         ],
@@ -35,6 +39,18 @@ Import Angular module:
     export class SomeModule {}
 
 
-Use rich editor in a component:
+Basic usage in a component:
 
-    <draft-rich-html (html)="onHtmlChange($event)" placeholder="Write a story"></draft-rich-html>
+    @Component({
+        template: `
+            <draft-rich-html
+                (html)="onHtmlChange($event)"
+                placeholder="Write a story">
+            </draft-rich-html>
+        `,
+    })
+    export class SomeComponent {
+        onHtmlChange($event: string) {
+            console.debug('Got new HTML from the Draft.js editor', $event);
+        }
+    }
