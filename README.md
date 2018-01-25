@@ -1,25 +1,31 @@
-# Angular bindings for Draft.js editor
+# ngx-draft-js: Angular bindings for Draft.js
 
 [![Travis CI Build Status](https://travis-ci.org/strogonoff/ngx-draft-js.svg?branch=master)](https://travis-ci.org/strogonoff/ngx-draft-js)
 
-**[Draft.js](http://draftjs.org)** is a React-based framework
-for building rich text editors
-developed at Facebook.
+**ngx-draft-js** is an Angular library that wraps Draft.js
+and ships with a configurable rich editor component.
+The editor is based on the official Draft.js example,
+with HTML as markup export format.
 
-**ngx-draft-js** wraps Draft.js as an Angular library,
-bundling configurable rich editor component based on the official Draft.js example
-with an addition of HTML export via draft-js-export-html package.
+[**Demo**](https://ngx-draft-js-demo-6aa62.firebaseapp.com/ "Showcases rich editor functionality with bindings")
+&emsp;&emsp;
+[NPM](https://www.npmjs.com/package/ngx-draft-js)
+&emsp;&emsp;
+[GitHub](https://github.com/strogonoff/ngx-draft-js/)
+
+**What’s Draft.js?** Developed at Facebook, Draft.js is a React-based framework
+for building rich text editors. Read more about it at http://draftjs.org.
 
 ## Installation
 
-ngx-draft-js was tested with Angular 5.
+ngx-draft-js is intended to be added to Angular 5 projects.
 
-React, React DOM and Draft.js are also specified as peer dependencies,
+React, React DOM and Draft.js are all specified as peer dependencies as well,
 so add them yourself if you haven’t them in your project:
 
     yarn add react react-dom draft-js
 
-Install the package itself:
+Install the package:
 
     yarn add ngx-draft-js
 
@@ -28,32 +34,35 @@ Install the package itself:
 
 Sample module definition:
 
-    import { DraftRichModue } from 'ngx-draft-js';
-    import { SomeComponentWithEditor } from './some.component';
+```typescript
+import { DraftRichModue } from 'ngx-draft-js';
+import { SomeComponentWithEditor } from './some.component';
 
-    @NgModule({
-        declarations: [
-            SomeComponentWithEditor,
-        ],
-        imports: [
-            DraftRichModule,
-        ],
-    })
-    export class SomeModule {}
-
+@NgModule({
+    declarations: [
+        SomeComponentWithEditor,
+    ],
+    imports: [
+        DraftRichModule,
+    ],
+})
+export class SomeModule {}
+```
 
 Basic usage in a component:
 
-    @Component({
-        template: `
-            <draft-rich-html
-                (html)="onHtmlChange($event)"
-                placeholder="Write a story">
-            </draft-rich-html>
-        `,
-    })
-    export class SomeComponentWithEditor {
-        onHtmlChange($event: string) {
-            console.debug('Got new HTML from the Draft.js editor', $event);
-        }
+```typescript
+@Component({
+    template: `
+        <draft-rich-html
+            (html)="onHtmlChange($event)"
+            placeholder="Write a story">
+        </draft-rich-html>
+    `,
+})
+export class SomeComponentWithEditor {
+    onHtmlChange($event: string) {
+        console.debug('Got new HTML from the Draft.js editor', $event);
     }
+}
+```
