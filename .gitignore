@@ -5,6 +5,7 @@ angular-draft-js/_draft-js.scss
 
 # compiled output
 /dist
+/dist-demo
 /tmp
 /out-tsc
 *.component.css
