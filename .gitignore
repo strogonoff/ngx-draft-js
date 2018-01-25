@@ -1,12 +1,12 @@
 # derived during build
 angular-draft-js/draft-js.component.css
+angular-draft-js/**/*.component.css
 
 # compiled output
 /dist
 /dist-demo
 /tmp
 /out-tsc
-*.component.css
 
 # dependencies
 /node_modules
