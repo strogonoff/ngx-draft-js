@@ -1,0 +1,26 @@
+{
+  "//": "Paths here are relative to dist directory",
+  "name": "angular-draft-js",
+  "version": "0.1.0-pre",
+  "description": "Angular bindings for Draft.js",
+  "author": "Anton Strogonoff",
+  "license": "MIT",
+  "private": false,
+  "main": "./bundles/angular-draft.umd.js",
+  "module": "./esm5/angular-draft.js",
+  "es2015": "./esm2015/angular-raft.js",
+  "typings": "./angular-draft.d.ts",
+  "keywords": [
+    "angular",
+    "rich-text-editor",
+    "draft-js"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "draft-js": "^0.10.4"
+  },
+  "dependencies": {
+    "draft-js-export-html": "^1.2.0"
+  }
+}

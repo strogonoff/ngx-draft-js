@@ -1,0 +1,59 @@
+<header>
+  <h1>ngx-draft-js</h1>
+</header>
+
+<main id="liveDemo">
+
+  <div class="description">
+    <p>
+      <span>Quickly add <term #draft>Draft.js</term></span>
+      <term-def for="draft">
+      <a href="https://draftjs.org/">Draft.js</a>, a React-based
+      framework for building rich text editors</term-def>
+      <span>to Angular-powered apps</span>
+      <span>with <term #ngxDraft>ngx-draft-js</term>.</span>
+      <term-def for="ngxDraft">
+      ngx-draft, which wraps Draft.js as an Angular 5 component
+      and bundles an HTML-exporting version of its rich editor example.</term-def>
+    </p>
+  </div>
+
+  <draft-rich-html
+    [(html)]="html"
+    [placeholder]="placeholder"
+    [key]="key"
+    [enableStyles]="enabledStyles"></draft-rich-html>
+
+  <div class="installStep">
+    yarn add
+    <strong>ngx-draft-js</strong>
+    <span class="peerDeps" title="Peer dependencies">draft-js react-dom react</span>
+  </div>
+
+  <div id="configDemo">
+    <pre [innerHtml]="configHead"></pre>
+
+    <pre>   <span style="white-space: nowrap">
+      <span [innerHtml]="configPrePlaceholder"></span><input [(ngModel)]="placeholder" type="text"><span [innerHtml]="configPostPlaceholder"></span>
+    </span></pre>
+
+    <pre>    <span [innerHtml]="configPreStyles"></span></pre>
+    <pre class="formattingOptions"><ng-container  *ngFor="let style of availableStyleNames"
+      ><label [class.disabled]="!enabledStyles[style]"
+        >  <span *ngIf="!enabledStyles[style]" class="commentMarkup">//</span
+        ><span *ngIf="enabledStyles[style]" class="commentMarkup">  </span
+        ><input type="checkbox"
+            [checked]="enabledStyles[style]"
+            (change)="toggleStyle(style)"
+        >&#8288;<span class="itemName" [innerText]="'\'' + style + '\','"></span></label><wbr>&shy;</ng-container></pre>
+    <pre>    <span [innerHtml]="configPostStyles"></span></pre><pre [innerHtml]="configFoot"></pre>
+    <pre>  html = `
+<textarea [(ngModel)]="html" (input)="computeNewKey()"></textarea>
+  `;
+}</pre>
+  </div>
+
+</main>
+
+<footer>
+</footer>

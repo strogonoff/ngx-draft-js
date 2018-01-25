@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+@media screen and (min-width: 800px) {
+  body {
+    justify-content: center;
+  }
+}
