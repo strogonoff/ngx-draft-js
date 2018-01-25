@@ -1,7 +1,7 @@
 // TypeScript config file that is used to compile the library into ES2015.
 {
   "files": [
-    "public-api.ts"
+    "./tmp/public-api.ts"
   ],
 
   "compilerOptions": {
@@ -18,11 +18,7 @@
     "moduleResolution": "node",
 
     "outDir": "./tmp/esm2015",
-    "rootDir": ".",
-    "rootDirs": [
-      ".",
-      "./tmp/angular-draft-js"
-    ],
+    "rootDir": "./tmp",
 
     "sourceMap": true,
     "inlineSources": true,
