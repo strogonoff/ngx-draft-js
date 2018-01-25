@@ -2,7 +2,6 @@
   "// 1": "This file is not included in library distribution.",
   "// 2": "Scripts and dependenceis below are for dev environment / demo app.",
   "// 3": "See package-dist.json for distributed package configuration.",
-  "private": true,
   "name": "ngx-draft-js",
   "version": "0.1.0-pre",
   "description": "Angular 5 component wrapping Draft.js",
