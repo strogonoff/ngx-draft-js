@@ -14,3 +14,8 @@ after_success:
 branches:
   except:
   - "/^v\\d+\\.\\d+\\.\\d+$/"
+deploy:
+  provider: firebase
+  token:
+    secure: d6QK6IX2TXBZmemjOek7zgW+vyp0mcWGmW2QOhVICBZW6H0JP5ENNaWujTJ9M+0PgdZbOUXPYeVAh02Q9dDsyHpERdULWOyG7Jyht2HU3DPbgCf6T8Yn7sbJWGjz/wU3XqFW6zlmGMUOmN/IOKoVnZASkDa1qztkFKfOJUF7HsN2iPUp4rUgGconpTZYP7ORZuRobn8NG8F7Ho/MDFLxum/BclhORcG3Q9IhYs1sOkFJ2NsCrDk0CcS2Tzr0eAydHkFOSh1Pg++Jzwr+Sd2mRBdZk+veB9/mHbIFdc7Eo6FOAYUXYxmIcgLkvXvRecpYooF2F/JjJ24VPBK4cc+lU6LZX2s3JTaMNdKVc4NPNd12leTfJ4FF3ThPPa/q5C3j9YBBsO46Vz//QhT1v9RWYht3Tu/Yy+02IHBlBDKNisCquHZJxf5Uc6cThP+O1I3XxJspO6zQ7qtipLIpjj0el7xq/MBk9XZ0kmBtFX7ADpbF3TZ6q4PDhQBhT7Pv2VvpWosgKvPQzyKqAN1L0yEMWnfBsiwWnUsoAgh/c6nfVRhHqVHoLSFRGFtNgm1vahpgdm+gxNZtnEkCbr55wZQEOGLGqsIZSNlCD9ebUlx01v+g2A8Yi+jrhbzvNcPieo+tRNpymu5UBUdqJK+EwaHynF5R5s1V05IwB4OeGkLk1xs=
+  project: "ngx-draft-js-demo"
