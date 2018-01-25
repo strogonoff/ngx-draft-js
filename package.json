@@ -30,6 +30,7 @@
     "dist": "yarn run dist:clean && yarn run build && yarn run dist:lib && yarn run dist:tsdef && yarn run build:clean",
     "clean": "yarn run dist:clean && yarn run build:clean",
     "semantic-release": "cp package-dist.json dist/package.json && cd dist && semantic-release",
+    "demo:dist": "ng build --prod",
     "travis-deploy-once": "travis-deploy-once"
   },
   "dependencies": {
