@@ -40,12 +40,13 @@
     <pre>    <span [innerHtml]="configPreStyles"></span></pre>
     <pre class="formattingOptions"><ng-container  *ngFor="let style of availableStyleNames"
       ><label [class.disabled]="!enabledStyles[style]"
-        >  <span *ngIf="!enabledStyles[style]" class="commentMarkup">//</span
-        ><span *ngIf="enabledStyles[style]" class="commentMarkup">  </span
-        ><input type="checkbox"
-            [checked]="enabledStyles[style]"
-            (change)="toggleStyle(style)"
-        >&#8288;<span class="itemName" [innerText]="'\'' + style + '\','"></span></label><wbr>&shy;</ng-container></pre>
+        >  <span
+          class="itemName"
+          [innerText]="'\'' + style + '\':'"></span
+        >&nbsp;<input type="checkbox"
+          [checked]="enabledStyles[style]"
+          (change)="toggleStyle(style)"
+        ><span class="itemName">,</span></label><wbr>&shy;</ng-container></pre>
     <pre>    <span [innerHtml]="configPostStyles"></span></pre><pre [innerHtml]="configFoot"></pre>
     <pre>  html = `
 <textarea [(ngModel)]="html" (input)="computeNewKey()"></textarea>

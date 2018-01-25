@@ -18,8 +18,8 @@ const configHead = htmlEntities.encode(`@Component({template: \`
 `);
 const configPrePlaceholder = htmlEntities.encode(`[placeholder]="`);
 const configPostPlaceholder = htmlEntities.encode(`"`);
-const configPreStyles = htmlEntities.encode(`[enableStyles]="[`);
-const configPostStyles = htmlEntities.encode(`]"></draft-rich-html>`);
+const configPreStyles = htmlEntities.encode(`[enableStyles]="{`);
+const configPostStyles = htmlEntities.encode(`}"></draft-rich-html>`);
 const configFoot = htmlEntities.encode(`\`})
 class NgxDraftDemo {
 `);
