@@ -1,17 +1,18 @@
 # Angular bindings for Draft.js editor
 
-ngx-draft-js wraps React-based Draft.js as an Angular 5 component,
-bundling a rich editor from the official Draft.js example
-with an addition of HTML export via draft-js-export-html package.
+**[Draft.js](http://draftjs.org)** is a React-based framework
+for building rich text editors
+developed at Facebook.
 
-Draft.js is a framework for building rich text editors
-developed by Facebook.
+**ngx-draft-js** wraps Draft.js as an Angular library,
+bundling configurable rich editor component based on the official Draft.js example
+with an addition of HTML export via draft-js-export-html package.
 
 ## Installation
 
 ngx-draft-js was tested with Angular 5.
 
-React, React DOM and Draft.js are specified as peer dependencies,
+React, React DOM and Draft.js are also specified as peer dependencies,
 so add them yourself if you haven’t them in your project:
 
     yarn add react react-dom draft-js
@@ -21,9 +22,9 @@ Install the package itself:
     yarn add ngx-draft-js
 
 
-## Using bundled rich text editor
+## Using the rich text editor
 
-Module import:
+Sample module definition:
 
     import { DraftRichModue } from 'angular-draft-js/editors/rich.module';
     import { SomeComponentWithEditor } from './some.component';
