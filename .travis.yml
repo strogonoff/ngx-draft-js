@@ -7,8 +7,6 @@ notifications:
 node_js:
   - '9'
   - '8'
-  - '6'
-  - '4'
 script:
   - npm run dist
 after_success:
