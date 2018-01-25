@@ -1,8 +1,7 @@
 {
-  "//": "Paths here are relative to dist directory",
   "name": "ngx-draft-js",
-  "version": "0.1.0-pre",
-  "description": "Angular bindings for Draft.js",
+  "version": "0.0.0-placeholder",
+  "description": "Angular 5 component wrapping Draft.js rich text editor",
   "author": "Anton Strogonoff",
   "license": "MIT",
   "private": false,
@@ -10,6 +9,10 @@
   "module": "./esm5/angular-draft.js",
   "es2015": "./esm2015/angular-raft.js",
   "typings": "./angular-draft.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strogonoff/ngx-draft-js.git"
+  },
   "keywords": [
     "angular",
     "rich-text-editor",
