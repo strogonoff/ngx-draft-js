@@ -32,7 +32,7 @@ gulp.task('compileRichEditorComponentSass', function () {
     .pipe(gulp.dest(`${src}/${lib}/editors`));
 });
 
-gulp.task('inlineCss', ['copyEditorTs', 'copyLibTs', 'compileRichEditorComponentSass'], function () {
+gulp.task('inlineCss', ['copyEditorTs', 'copyLibTs', 'vendorDraftJsCss', 'compileRichEditorComponentSass'], function () {
   inlineSync(
     `${src}/${lib}/draft-js.component.ts`,
     `${dest}/${lib}/draft-js.component.ts`);
