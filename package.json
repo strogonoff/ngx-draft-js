@@ -25,11 +25,11 @@
     "build:umd": "rollup -c rollup-umd.conf.js",
     "build": "yarn run build:inline && yarn run build:esm2015 && yarn run build:fesm2015 && yarn run build:esm5 && yarn run build:fesm5 && yarn run build:umd",
     "dist:clean": "yarn run build:clean && rm -rf ./dist",
-    "dist:lib": "cp -R package-dist.json dist/package.json && cp README.md dist/ && mkdir -p dist/angular-draft-js/editors",
+    "dist:lib": "cp README.md dist/ && mkdir -p dist/angular-draft-js/editors",
     "dist:tsdef": "cp -R tmp/esm2015/*.d.ts tmp/esm2015/*.json dist/ && cp -R tmp/esm2015/angular-draft-js/*.d.ts dist/angular-draft-js/ && cp -R tmp/esm2015/angular-draft-js/editors/*.d.ts dist/angular-draft-js/editors/",
     "dist": "yarn run dist:clean && yarn run build && yarn run dist:lib && yarn run dist:tsdef && yarn run build:clean",
     "clean": "yarn run dist:clean && yarn run build:clean",
-    "semantic-release": "semantic-release",
+    "semantic-release": "semantic-release pre && cp package-dist.json dist/package.json && npm run travis-deploy-once \"npm publish dist\" && semantic-release post",
     "travis-deploy-once": "travis-deploy-once"
   },
   "dependencies": {

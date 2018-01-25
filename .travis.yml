@@ -10,7 +10,7 @@ node_js:
 script:
   - npm run dist
 after_success:
-  - cd dist && ../node_modules/.bin/travis-deploy-once "../node_modules/.bin/semantic-release"
+  - npm run semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
