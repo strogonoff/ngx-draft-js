@@ -17,7 +17,12 @@ import { ReactComponentWrapper } from './react.component';
 
 export class DraftBase {
   @Input() editorClass: React.Component;
-  @Input() editorProps: any = {};  // TODO: Type props?
+
+  // TODO: Type props?
+  @Input() editorProps: any = {
+    editorState: EditorState.createEmpty(),
+  };
+
   @Input()
   set key(key: string) {
     this.editorProps = Object.assign({}, this.editorProps, { key: key });
