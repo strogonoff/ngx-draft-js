@@ -69,4 +69,14 @@ export class SomeComponentWithEditor {
 }
 ```
 
+### Component interface
+
+Selector: ``draft-rich-html``
+
+Bindings:
+
+* ``[(html)]``: markup you get from the editor or initialize it with, HTML string
+* ``[placeholder]``: self-explanatory, string
+* ``[enableStyles]``: formatting options to display, a map of ``{ option label: boolean }`` (for possible labels see ``BLOCK_TYPES`` and ``INLINE_STYLES`` in [editors/rich.ts](https://github.com/strogonoff/ngx-draft-js/blob/master/angular-draft-js/editors/rich.ts))
+
 See also: [**Demo**](https://ngx-draft-js-demo-6aa62.firebaseapp.com/).
