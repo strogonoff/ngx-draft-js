@@ -68,3 +68,5 @@ export class SomeComponentWithEditor {
     }
 }
 ```
+
+See also: [**Demo**](https://ngx-draft-js-demo-6aa62.firebaseapp.com/).
