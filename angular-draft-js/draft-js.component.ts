@@ -41,8 +41,8 @@ export class DraftHtmlBase extends DraftBase {
 
   ngOnInit() {
     this.editorProps = Object.assign({}, this.editorProps, {
-      onChange: $event => { this.htmlChange.emit($event.html);
-    } });
+      onChange: $event => { this.htmlChange.emit($event.html); },
+    });
   }
 
   stateFromHTML(html: string) {
