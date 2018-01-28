@@ -1,7 +1,7 @@
 export default {
-  input: 'tmp/esm5/angular-draft-js.js',
+  input: 'tmp/esm5/angular-draft.js',
   output: {
-    file: 'dist/bundles/angular-draft-js.umd.js',
+    file: 'dist/bundles/angular-draft.umd.js',
     name: 'angularDraftJs',
     format: 'umd',
     globals: {

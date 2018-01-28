@@ -1,7 +1,7 @@
 export default {
-  input: 'tmp/esm5/angular-draft-js.js',
+  input: 'tmp/esm5/angular-draft.js',
   output: {
-    file: 'dist/esm5/angular-draft-js.js',
+    file: 'dist/esm5/angular-draft.js',
     format: 'es',
   },
 };
