@@ -1,0 +1,20 @@
+// TypeScript config file that is used to compile the library into FES2015.
+{
+  "extends": "./tsconfig-esm2015.json",
+
+  "files": [
+    "./tmp/index.ts"
+  ],
+
+  "compilerOptions": {
+    "outDir": "./tmp/fesm2015"
+  },
+
+  "angularCompilerOptions": {
+    "annotateForClosureCompiler": true,
+    "strictMetadataEmit": true,
+    "skipTemplateCodegen": true,
+    "flatModuleOutFile": "angular-draft-js.js",
+    "flatModuleId": "angular-draft-js"
+  }
+}
