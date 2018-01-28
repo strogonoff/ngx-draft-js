@@ -27,7 +27,7 @@
     "dist:clean": "yarn run build:clean && rm -rf ./dist",
     "dist:lib": "cp README.md dist/ && mkdir -p dist/angular-draft-js/editors",
     "dist:tsdef": "cp -R tmp/esm2015/*.d.ts tmp/esm2015/*.json dist/ && cp -R tmp/esm2015/angular-draft-js/*.d.ts dist/angular-draft-js/ && cp -R tmp/esm2015/angular-draft-js/editors/*.d.ts dist/angular-draft-js/editors/",
-    "dist": "yarn run dist:clean && yarn run build && yarn run dist:lib && yarn run dist:tsdef && yarn run build:clean",
+    "dist": "yarn run dist:clean && yarn run build && yarn run dist:lib && yarn run dist:tsdef && yarn run build:clean && cp package-dist.json dist/package.json",
     "clean": "yarn run dist:clean && yarn run build:clean",
     "semantic-release": "cp .releaserc.yml dist/.releaserc.yml && cp package-dist.json dist/package.json && cd dist && semantic-release",
     "demo:dist": "ng build --prod",
