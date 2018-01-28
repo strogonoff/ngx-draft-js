@@ -9,12 +9,12 @@
     "type": "git",
     "url": "https://github.com/strogonoff/ngx-draft-js.git"
   },
-  "main": "./bundles/angular-draft.umd.js",
+  "main": "./bundles/angular-draft-js.umd.js",
   "author": "Anton Strogonoff",
   "license": "MIT",
-  "module": "./esm5/angular-draft.js",
-  "es2015": "./esm2015/angular-draft.js",
-  "typings": "./angular-draft.d.ts",
+  "module": "./esm5/angular-draft-js.js",
+  "es2015": "./esm2015/angular-draft-js.js",
+  "typings": "./angular-draft-js.d.ts",
   "scripts": {
     "build:clean": "rm -rf ./tmp",
     "build:inline": "gulp inlineComponent",

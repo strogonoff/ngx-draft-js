@@ -1,13 +1,14 @@
 // TypeScript config file that is used to compile the library into ES2015.
 {
   "files": [
-    "./tmp/public-api.ts"
+    "./tmp/index.ts"
   ],
 
   "compilerOptions": {
     "declaration": true,
     "stripInternal": false,
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
 
     "noUnusedParameters": true,
     "strictNullChecks": true,
@@ -37,7 +38,7 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
-    "flatModuleOutFile": "angular-draft.js",
+    "flatModuleOutFile": "angular-draft-js.js",
     "flatModuleId": "angular-draft-js"
   }
 }
