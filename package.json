@@ -13,7 +13,7 @@
   "author": "Anton Strogonoff",
   "license": "MIT",
   "module": "./esm5/angular-draft.js",
-  "es2015": "./esm2015/angular-raft.js",
+  "es2015": "./esm2015/angular-draft.js",
   "typings": "./angular-draft.d.ts",
   "scripts": {
     "build:clean": "rm -rf ./tmp",
