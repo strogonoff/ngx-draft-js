@@ -33,7 +33,7 @@ export class DraftBase {
 export class DraftHtmlBase extends DraftBase {
   @Input()
   set html(html: string) {
-    const state: EditorState = html ? this.stateFromHTML(html) : EditorState.createEmpty();
+    const state: EditorState = this.stateFromHTML(html);
     this.editorProps = Object.assign({}, this.editorProps, { editorState: state });
   }
 
@@ -45,8 +45,15 @@ export class DraftHtmlBase extends DraftBase {
     });
   }
 
-  stateFromHTML(html: string) {
+  stateFromHTML(html: string): EditorState {
+    const emptyState = EditorState.createEmpty();
+
+    if (!html) { return emptyState; }
+
     const blocksFromHTML = convertFromHTML(html);
+
+    if (!blocksFromHTML) { return emptyState; }
+
     const state = ContentState.createFromBlockArray(
       blocksFromHTML.contentBlocks,
       blocksFromHTML.entityMap,
