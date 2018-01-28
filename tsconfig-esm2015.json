@@ -37,6 +37,8 @@
   "angularCompilerOptions": {
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
-    "skipTemplateCodegen": true
+    "skipTemplateCodegen": true,
+    "flatModuleOutFile": "angular-draft.js",
+    "flatModuleId": "ngx-draft-js"
   }
 }
