@@ -9,6 +9,6 @@
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
     "flatModuleOutFile": "angular-draft.js",
-    "flatModuleId": "angular-draft-js"
+    "flatModuleId": "ngx-draft-js"
   }
 }
