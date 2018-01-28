@@ -9,6 +9,11 @@ and ships with a configurable WYSIWYG editor component.
 The editor is based on the official Draft.js example,
 with HTML as markup export format.
 
+The library is functioning and being used in production,
+but while it’s at version 1.x it should be considered unstable
+(e.g., your AOT build might start failing if you’re lazy-loading
+this library’s modules using Angular’s router).
+
 [**Demo**](https://ngx-draft-js-demo-6aa62.firebaseapp.com/ "Showcases rich editor functionality with bindings")
 &emsp;&emsp;
 [NPM](https://www.npmjs.com/package/ngx-draft-js)
