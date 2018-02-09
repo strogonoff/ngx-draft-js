@@ -52,12 +52,16 @@ export class DraftHtmlBase extends DraftBase {
 
     const blocksFromHTML = convertFromHTML(html);
 
-    if (!blocksFromHTML) { return emptyState; }
+    let contentBlocks, entityMap;
 
-    const state = ContentState.createFromBlockArray(
-      blocksFromHTML.contentBlocks,
-      blocksFromHTML.entityMap,
-    );
+    try {
+      contentBlocks = blocksFromHTML.contentBlocks;
+      entityMap = blocksFromHTML.entityMap;
+    } catch (e) {
+      return emptyState;
+    }
+
+    const state = ContentState.createFromBlockArray(contentBlocks, entityMap);
     return EditorState.createWithContent(state, this.editorProps.decorator);
   }
 }
