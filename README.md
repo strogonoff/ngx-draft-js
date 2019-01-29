@@ -42,7 +42,7 @@ Install the package:
 Sample module definition:
 
 ```typescript
-import { DraftRichModue } from 'ngx-draft-js';
+import { DraftRichModule } from 'ngx-draft-js';
 import { SomeComponentWithEditor } from './some.component';
 
 @NgModule({
